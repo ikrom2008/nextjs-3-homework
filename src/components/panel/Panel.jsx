@@ -2,9 +2,9 @@
 import React from 'react'
 import './Panel.css'
 import Image from 'next/image'
-import logo from '@/../public/Logo.svg'
-import overview from '@/../public/overview.png'
-import tinkers from '@/../public/tickets.png'
+import logo from '../../../public/Logo.svg'
+import overview from '../../../public/overview.png'
+import tinkers from '../../../public/tickets.png'
 function Panel({setProducts,setUsers,products,users}) {
   return (
     <div className='panel'>

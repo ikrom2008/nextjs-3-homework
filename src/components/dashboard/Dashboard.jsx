@@ -2,9 +2,9 @@
 import React from 'react'
 import './Dashboard.css'
 import Image from 'next/image'
-import Vector from '@/../public/Vector.svg'
-import Vector2 from '@/../public/Vector2.png'
-import userphoto from '@/../public/Photo.png'
+import Vector from '../../../public/Vector.svg'
+import Vector2 from '../../../public/Vector2.png'
+import userphoto from '../../../public/Photo.png'
 import Products from './Products'
 import Users from './Users'
 
@@ -14,7 +14,7 @@ import Users from './Users'
   return (
     <div className='dashboard' style={menu ? {width:'85%'} : {width: '100%'}}>
         <div className='menu'>
-            <Image src={Vector} width={25} height={25} alt='vektor' onClick={() => setMenu(!menu)} />
+            <Image style={{cursor: 'pointer'}} src={Vector} width={25} height={25} alt='vektor' onClick={() => setMenu(!menu)} />
             <div className='user'>
                 <p>Jones Ferdinand</p>
                 <Image src={userphoto} width={40} height={40} alt='user' />
