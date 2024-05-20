@@ -42,7 +42,7 @@ export default function Products({menu}){
   return (
     <div>
       <ul className='items'>
-          <li className='item' style={menu ? {background: 'white', position: 'fixed', paddingRight: '260px'}: {background: 'white', position: 'fixed', paddingRight: '80px'}}>
+          <li className='item' style={menu ? {background: 'white', position: 'fixed', paddingRight: '300px',maxWidth: '1600px'}: {background: 'white', position: 'fixed', paddingRight: '80px',maxWidth: '1600px'}}>
             <div className='ower' ><h4 style={{opacity: '0.5'}}>Owner</h4></div>
             <p className='date'>End date</p>
             <span className='pro'>Profits</span>
