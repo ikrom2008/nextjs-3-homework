@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className='main'>
       {menu ? <Panel setProducts={setProducts} users={users} products={products} setUsers={setUsers} /> : <></>}
-      <Dashboard products={products} users={users} menu={menu} setMenu={setMenu} />
+      <Dashboard products={products} users={users} menu={menu} setProducts={setProducts} setUsers={setUsers} setMenu={setMenu} />
     </main>
   );
 }

@@ -121,3 +121,36 @@
     align-items: end;
     
 }
+.newpages{
+    width: 550px;
+    ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    li{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    position: relative;
+    }
+    li::before {
+        content: "";
+        width: 0;
+        height: 1px;
+        background: red;
+        position: absolute;
+        transition: 0.3s;
+        bottom: -4px;
+        left: 0;
+      }
+      li:hover::before {
+        width: 100%;
+    }
+    li:hover{
+        color: red;
+    }
+}

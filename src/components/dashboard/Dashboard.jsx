@@ -7,14 +7,30 @@ import Vector2 from '../../../public/Vector2.png'
 import userphoto from '../../../public/Photo.png'
 import Products from './Products'
 import Users from './Users'
+import { useRouter } from 'next/router'
 
   
-  export default function Dashboard({products,users,menu,setMenu}){
-
+export default function Dashboard({products,users,menu,setMenu,setProducts,setUsers}){
   return (
     <div className='dashboard' style={menu ? {width:'85%'} : {width: '100%'}}>
         <div className='menu'>
             <Image style={{cursor: 'pointer'}} src={Vector} width={25} height={25} alt='vektor' onClick={() => setMenu(!menu)} />
+            {menu ? <></> : <div className='newpages'>
+                <ul>
+                    <li onClick={() => {
+                        setUsers(false)
+                        setProducts(true)
+                    }}>Products</li>
+                    <li onClick={() => {
+                        setProducts(false)
+                        setUsers(true)
+                    }}>Users</li>
+                    <li>Posts</li>
+                    <li>Contacts</li>
+                    <li>Agents</li>
+                    <li>Articles</li>
+                </ul>
+                </div>}
             <div className='user'>
                 <p>Jones Ferdinand</p>
                 <Image src={userphoto} width={40} height={40} alt='user' />
