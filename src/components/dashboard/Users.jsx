@@ -42,7 +42,7 @@ function Users({menu}) {
   return (
     <div>
       <ul className='lists'>
-        <li className='list' style={menu ? {position: 'fixed', paddingRight: '320px'} : {position: 'fixed', paddingRight: '80px'} }>
+        <li className='list' style={menu ? {position: 'fixed', paddingRight: '270px'} : {position: 'fixed', paddingRight: '80px'} }>
             <div >
                 <h4 style={{opacity: '0.6'}}>Ticket details</h4>
             </div>
